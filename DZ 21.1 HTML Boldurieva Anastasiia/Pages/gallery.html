@@ -4,86 +4,94 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts.js"></script>
   </head>
   <body>
-    <h1>
-      <u><i>Gallery</i></u>
-    </h1>
-    <!-- Мініатюри -->
-    <a href="#img1"
-      ><img
-        src="../Photo Giselle/dsc04215-kopyya.jpg"
-        width="300"
-        alt="Зображення 1"
-    /></a>
-    <a href="#img2"
-      ><img
-        src="../Photo Giselle/dsc04442-kopyya.jpg"
-        width="300"
-        alt="Зображення 2"
-    /></a>
-    <a href="#img3"
-      ><img
-        src="../Photo Giselle/dsc05494-kopyya.jpg"
-        width="300"
-        alt="Зображення 3"
-    /></a>
-    <a href="#img4"
-      ><img
-        src="../Photo Giselle/dsc05870-kopyya.jpg"
-        width="300"
-        alt="Зображення 4"
-    /></a>
-    <a href="#img5"
-      ><img
-        src="../Photo Giselle/dsc06129-kopyya.jpg"
-        width="300"
-        alt="Зображення 5"
-    /></a>
-    <a href="#img6"
-      ><img
-        src="../Photo Giselle/giselle-05.jpg"
-        width="300"
-        alt="Зображення 6"
-    /></a>
-    <a href="#img7"
-      ><img
-        src="../Photo Giselle/giselle-06.jpg"
-        width="300"
-        alt="Зображення 7"
-    /></a>
-    <a href="#img8"
-      ><img
-        src="../Photo Giselle/giselle-09.jpg"
-        width="300"
-        alt="Зображення 8"
-    /></a>
-    <a href="#img9"
-      ><img
-        src="../Photo Giselle/giselle-011.jpg"
-        width="300"
-        alt="Зображення 9"
-    /></a>
-    <a href="#img10"
-      ><img
-        src="../Photo Giselle/giselle-012.jpg"
-        width="300"
-        alt="Зображення 10"
-    /></a>
-    <a href="#img11"
-      ><img
-        src="../Photo Giselle/giselle-013.jpg"
-        width="300"
-        alt="Зображення 11"
-    /></a>
-    <a href="#img12"
-      ><img
-        src="../Photo Giselle/giselle-015.jpg"
-        width="300"
-        alt="Зображення 12" /></a
-    ><br /><br />
+    <section class="main-page-gallery">
+      <h1 class="gallery-maim-item">Gallery</h1>
+      <div class="gallery">
+        <img
+          src="../Photo Giselle/dsc04215-kopyya.jpg"
+          alt="Photo 1"
+          onclick="openModal(this)"
+        />
+        <img
+          src="../Photo Giselle/dsc04442-kopyya.jpg"
+          alt="Photo 2"
+          onclick="openModal(this)"
+        />
+        <img
+          src="../Photo Giselle/dsc05494-kopyya.jpg"
+          alt="Photo 1"
+          onclick="openModal(this)"
+        />
+        <img
+          src="../Photo Giselle/dsc05870-kopyya.jpg"
+          alt="Photo 2"
+          onclick="openModal(this)"
+        />
+        <img
+          src="../Photo Giselle/dsc06129-kopyya.jpg"
+          alt="Photo 1"
+          onclick="openModal(this)"
+        />
+        <img
+          src="../Photo Giselle/giselle-05.jpg"
+          alt="Photo 2"
+          onclick="openModal(this)"
+        />
+        <img
+          src="../Photo Giselle/giselle-06.jpg"
+          alt="Photo 1"
+          onclick="openModal(this)"
+        />
+        <img
+          src="../Photo Giselle/giselle-09.jpg"
+          alt="Photo 2"
+          onclick="openModal(this)"
+        />
+        <img
+          src="../Photo Giselle/giselle-011.jpg"
+          alt="Photo 1"
+          onclick="openModal(this)"
+        />
+        <img
+          src="../Photo Giselle/giselle-012.jpg"
+          alt="Photo 2"
+          onclick="openModal(this)"
+        />
+        <img
+          src="../Photo Giselle/giselle-013.jpg"
+          alt="Photo 1"
+          onclick="openModal(this)"
+        />
+        <img
+          src="../Photo Giselle/giselle-015.jpg"
+          alt="Photo 2"
+          onclick="openModal(this)"
+        />
+      </div>
 
-    <li><a href="index.html">Giselle</a></li>
-    <li><a href="contact.html">Contact us</a></li>
+      <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage" />
+      </div>
+
+      <div class="pages-link">
+        <button class="link1">
+          <a href="index.html">Contact us</a>
+        </button>
+        <button class="link2">
+          <a href="contact.html">Gallery</a>
+        </button>
+      </div>
+    </section>
   </body>
 </html>

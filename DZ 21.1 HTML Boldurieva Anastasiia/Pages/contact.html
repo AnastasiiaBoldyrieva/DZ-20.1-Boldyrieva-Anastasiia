@@ -4,39 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>
-      <u><i>Contact us</i></u>
-    </h1>
+    <section class="main-page-contakt">
+      <h1 class="contact-main-item">
+        Contact us
+      </h1>
+      <div class="wrapper">
+        <div class="contact-item-tickets">
+          <h2 class="contact-title"><li>Tickets</li></h2>
+          <h3 class="contact-tel">
+            <a href="tel:+38 (048) 780-15-09">+38 (048) 780-15-09</a>
+          </h3>
+          <h4 class="contact-email">
+            <a href="mailto:od.opera.booking@gmail.com"
+              >od.opera.booking@gmail.com</a
+            >
+          </h4>
+        </div>
 
-    <h2><li>Tickets</li></h2>
-    <h3><a href="tel:+38 (048) 780-15-09">+38 (048) 780-15-09</a></h3>
-    <h4>
-      <a href="mailto:od.opera.booking@gmail.com">od.opera.booking@gmail.com</a>
-    </h4>
+        <div class="contact-item-press">
+          <h2 class="contact-title"><li>For press</li></h2>
+          <h3 class="contact-tel">
+            <a href="tel:+38 (048) 780-15-54">+38 (048) 780-15-54</a>
+          </h3>
+          <h4 class="contact-email">
+            <a href="mailto:operahouse.odesa@gmail.com"
+              >operahouse.odesa@gmail.com</a
+            >
+          </h4>
+        </div>
 
-    <h2><li>For press</li></h2>
-    <h3><a href="tel:+38 (048) 780-15-54">+38 (048) 780-15-54</a></h3>
-    <h4>
-      <a href="mailto:operahouse.odesa@gmail.com">operahouse.odesa@gmail.com</a>
-    </h4>
+        <div class="contact-item-office">
+          <h2 class="contact-title"><li>Managing director's office</li></h2>
+          <h3 class="contact-tel">
+            <a href="tel:+38 (048) 722-22-30">+38 (048) 722-22-30</a>
+          </h3>
+          <h4 class="contact-email">
+            <a href="mailto:operahouse.odesa@gmail.com"
+              >operahouse.odesa@gmail.com</a
+            >
+          </h4>
+        </div>
+      </div>
 
-    <h2><li>Managing director's office</li></h2>
-    <h3><a href="tel:+38 (048) 722-22-30">+38 (048) 722-22-30</a></h3>
-    <h4>
-      <a href="mailto:operahouse.odesa@gmail.com">operahouse.odesa@gmail.com</a>
-    </h4>
+      <div class="subscribe">
+        <h3>SUBSCRIBE TO NEWS AND EVENTS ANNOUNCEMENTS</h3>
+      </div>
 
-    <h3>SUBSCRIBE TO NEWS AND EVENTS ANNOUNCEMENTS</h3>
+      <div class="email-item">
+        <form action="/submit" method="post">
+          <label class="email-title" for="email">Enter your email</label><br />
+          <input
+            class="fild"
+            type="email"
+            id="email"
+            name="email"
+          /><br /><br /> </div>
+         <div class="button-item"> <button class="button" type="submit">Sign up</button><br /><br />
+         </div></form>
+      
 
-    <form action="/submit" method="post">
-      <label for="email">Enter your email</label><br />
-      <input type="email" id="email" name="email" /><br /><br />
-      <button type="submit">Sign up</button><br /><br />
-
-      <li><a href="index.html">Giselle</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-    </form>
+      <div class="pages-link">
+        <button class="link1">
+          <a href="index.html">Contact us</a>
+        </button>
+        <button class="link2">
+          <a href="gallery.html">Gallery</a>
+        </button>
+      </div>
+    </section>
   </body>
 </html>
